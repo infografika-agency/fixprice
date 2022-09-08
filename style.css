@@ -302,13 +302,13 @@ ul {
 
 
 .tag {
-  padding: 5px 14px;
+  padding: 0.5rem 1rem;
   background-color: var(--white);
   color: var(--black);
   border-radius: 0.6rem;
   line-height: 1;
   width: fit-content;
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: 'Montserrat';
 }
