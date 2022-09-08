@@ -62,7 +62,7 @@ h3 {
   font-family: 'Montserrat';
   font-weight: 600;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -96,7 +96,7 @@ li {
   text-align: left;
   width: 37rem;
   margin-left: 6rem;
-  padding-bottom: 0.8rem;
+  /* padding-bottom: 0.8rem; */
   display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -125,6 +125,8 @@ a:hover {
   text-align: left;
   background-color: var(--color1);
   background-image: url('images/background.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center bottom;
   
   margin: 0;
@@ -180,6 +182,7 @@ article {
 .sticky-thing {
   position: -webkit-sticky;
   position: sticky;
+  padding-top: 3rem;
   left: 0;
   z-index: 0;
   top: 0vh;
@@ -191,9 +194,9 @@ article {
 }
 
 #stickyImage {
-  width: 50rem;
+  width: 55rem;
   height: auto;
-  margin-left: 4rem;
+  margin-left: 0;
 }
 
 
@@ -305,7 +308,7 @@ ul {
   border-radius: 0.6rem;
   line-height: 1;
   width: fit-content;
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 400;
   font-family: 'Montserrat';
 }
@@ -365,13 +368,14 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: baseline;
 }
 
 
 .stickyImage {
   object-fit: cover;
-  width: 50px;
-  height: 100px;
+    /* width: 50px;
+    height: 100px; */
 }
 
 .special {
@@ -390,10 +394,10 @@ ul {
   display: flex;
 align-items: center;
 justify-content: center;
-font-size: 0.8rem;
+font-size: 1rem;
 text-transform: uppercase;
 letter-spacing: 0.05rem;
-font-weight: 400;
+font-weight: 600;
 }
 
 
@@ -402,58 +406,58 @@ font-weight: 400;
 
 
 .tooltip:hover  .tooltipText {
-  padding: 1rem 2rem 1rem 1.6rem;
-  visibility: visible;
-  background-color: var(--color2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25rem;
-  text-align: left;
-  z-index: 5;
-  font-size: 0.8rem;
-text-transform: none;
-letter-spacing: normal;
-}
-
-.tooltip:active  .tooltipText {
-  padding: 1rem 2rem 1rem 1.6rem;
+  padding: 1.4rem 2rem 2rem 1.6rem;
   visibility: visible;
   background-color:  var(--color2);
   position: absolute;
   top: 0;
   left: 0;
-  width: 25rem;
+  width: 30rem;
   text-align: left;
   z-index: 5;
-  font-size: 0.8rem;
+  font-size: 1rem;
+text-transform: none;
+letter-spacing: normal;
+}
+
+.tooltip:active  .tooltipText {
+  padding: 1.4rem 2rem 2rem 1.6rem;
+  visibility: visible;
+  background-color:  var(--color2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  text-align: left;
+  z-index: 5;
+  font-size: 1rem;
 text-transform: none;
 letter-spacing: normal;
 }
 
 
 .tooltip:focus  .tooltipText {
-  padding: 1rem 2rem 1rem 1.6rem;
+  padding: 1.4rem 2rem 2rem 1.6rem;
   visibility: visible;
   background-color:  var(--color2);
   position: absolute;
   top: 0;
   left: 0;
-  width: 25rem;
+  width: 30rem;
   text-align: left;
   z-index: 5;
-  font-size: 0.8rem;
+  font-size: 1rem;
 text-transform: none;
 letter-spacing: normal;
 }
 
 .tooltipText p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
 }
 
 .tooltipText h3 {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -484,6 +488,8 @@ letter-spacing: normal;
   html {
     font-size: 3vw;
   }
+
+  
 
   body {
     background-color: #F4F4F4;
@@ -524,6 +530,7 @@ letter-spacing: normal;
     margin-bottom: 0.5rem;
     padding-top: 0.5rem;
     font-size: 3rem;
+    align-items: baseline;
   }
  
   .tooltipText h3{
@@ -563,8 +570,7 @@ letter-spacing: normal;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
   }
 
   #outro {
@@ -607,6 +613,7 @@ letter-spacing: normal;
 
   .titlesLead {
     flex-direction: column;
+    align-items: baseline;
   }
 
   .tag {
